@@ -20,7 +20,6 @@ class ProductsController < ApplicationController
   def create
     @product = Product.create(product_params)
     render json: @product
-    # redirect_to products_path
   end
 
   def show
